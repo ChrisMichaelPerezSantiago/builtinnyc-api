@@ -1,0 +1,84 @@
+{
+  "name": "builtinnyc-api",
+  "type": "module",
+  "version": "0.0.0",
+  "packageManager": "pnpm@8.8.0",
+  "description": "The Built In NYC Job Listings API provides a programmatic way to access and retrieve job listings from the Built In NYC website. Built In NYC is a platform that connects job seekers with innovative companies in the New York City tech and startup ecosystem. This API allows developers to search for job opportunities in a specific location, category, with various work options, and more.",
+  "author": "Chris Michael <chrisperezsantiago1@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/ChrisMichaelPerezSantiago/builtinnyc-api#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChrisMichaelPerezSantiago/builtinnyc-api.git"
+  },
+  "keywords": [
+    "builtinnyc",
+    "builtinnyc-api"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/*",
+        "./dist/index.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "dev": "unbuild --stub",
+    "lint": "eslint .",
+    "prepublishOnly": "nr build",
+    "release": "bumpp && npm publish",
+    "start": "esno src/index.ts",
+    "test": "vitest",
+    "typecheck": "tsc --noEmit",
+    "prepare": "simple-git-hooks"
+  },
+  "dependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/cheerio": "^0.22.33",
+    "@types/lodash": "^4.14.200",
+    "@types/qs": "^6.9.9",
+    "axios": "^1.5.1",
+    "cheerio": "^1.0.0-rc.12",
+    "lodash": "^4.17.21",
+    "qs": "^6.11.2"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^1.0.0-beta.22",
+    "@antfu/ni": "^0.21.8",
+    "@antfu/utils": "^0.7.6",
+    "@types/node": "^20.8.3",
+    "bumpp": "^9.2.0",
+    "eslint": "^8.51.0",
+    "esno": "^0.17.0",
+    "lint-staged": "^14.0.1",
+    "pnpm": "^8.8.0",
+    "rimraf": "^5.0.5",
+    "simple-git-hooks": "^2.9.0",
+    "typescript": "^5.2.2",
+    "unbuild": "^2.0.0",
+    "vite": "^4.4.11",
+    "vitest": "^0.34.6"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  }
+}
