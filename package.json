@@ -1,7 +1,7 @@
 {
   "name": "builtinnyc-api",
   "type": "module",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "packageManager": "pnpm@8.8.0",
   "description": "The Built In NYC Job Listings API provides a programmatic way to access and retrieve job listings from the Built In NYC website. Built In NYC is a platform that connects job seekers with innovative companies in the New York City tech and startup ecosystem. This API allows developers to search for job opportunities in a specific location, category, with various work options, and more.",
   "author": "Chris Michael <chrisperezsantiago1@gmail.com>",
