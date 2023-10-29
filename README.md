@@ -258,7 +258,7 @@ The `Work Option` constant lists various work options.
 
 ```ts
 WORK_OPTION = [
-  'emote',
+  'remote',
   'hybrid',
   'office',
 ]
