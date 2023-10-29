@@ -132,7 +132,7 @@ export const COMPANY_SIZE = [
 ]
 
 export const WORK_OPTION = [
-  'emote',
+  'remote',
   'hybrid',
   'office',
 ]
