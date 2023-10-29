@@ -2,6 +2,17 @@
 *The [Built In NYC Job](https://www.builtinnyc.com/jobs) Listings API provides a programmatic way to access and retrieve job listings from the Built In NYC website. Built In NYC is a platform that connects job seekers with innovative companies in the New York City tech and startup ecosystem. This API allows developers to search for job opportunities in a specific location, category, with various work options, and more.*
 
 
+# Installation
+## npm
+```shell
+npm i builtinnyc-api
+```
+
+## yarn 
+```shell
+yarn add builtinnyc-api
+```
+
 # 📚 Example
 
 # `getJobs` Function Documentation
