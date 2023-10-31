@@ -323,6 +323,16 @@ getJobs(searchWithMultipleFilters)
   })
 ```
 
+## Output Structure
+```json
+{
+  "data": [],
+  "pagination": {
+    "page": 1,
+    "totalPages": 6
+  }
+}
+```
 
 
 ## **:handshake: Contributing**
